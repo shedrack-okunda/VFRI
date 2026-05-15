@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans bg-cream text-ink; }
+}
+
+@layer components {
+  .section-label {
+    @apply inline-flex items-center gap-2 text-gold text-xs tracking-[0.2em] uppercase font-sans;
+  }
+  .section-label::before {
+    content: '';
+    @apply block w-7 h-px bg-gold;
+  }
+  .section-title {
+    @apply font-display font-light leading-tight text-green-deep;
+  }
+  .btn-primary {
+    @apply inline-block bg-gold text-green-deep text-xs font-semibold tracking-widest uppercase
+           px-8 py-3 rounded-sm transition-all duration-200 hover:bg-gold-light hover:-translate-y-px cursor-pointer;
+  }
+  .btn-outline {
+    @apply inline-block bg-transparent text-white/80 border border-white/30 text-xs
+           tracking-widest uppercase px-8 py-3 rounded-sm transition-all duration-200
+           hover:border-gold hover:text-gold cursor-pointer;
+  }
+  .card {
+    @apply bg-white border border-black/[0.06] rounded-sm transition-all duration-200
+           hover:shadow-xl hover:-translate-y-1;
+  }
+  .kente-bar {
+    background: repeating-linear-gradient(
+      90deg,
+      #c8a84b 0px, #c8a84b 20px,
+      #7a2e1e 20px, #7a2e1e 40px,
+      #2a8050 40px, #2a8050 60px,
+      #c8a84b 60px, #c8a84b 80px
+    );
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
