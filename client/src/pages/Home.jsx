@@ -1,6 +1,7 @@
 import Hero from "../components/layout/Hero";
 import About from "../components/sections/About";
 import Achievements from "../components/sections/Achievements";
+import Contact from "../components/sections/Contact";
 import Focus from "../components/sections/Focus";
 import News from "../components/sections/News";
 import Programs from "../components/sections/Programs";
@@ -20,6 +21,7 @@ export default function Home() {
 			<News />
 			<Team />
 			<Achievements />
+			<Contact />
 		</>
 	);
 }

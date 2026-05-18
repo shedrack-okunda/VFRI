@@ -1,22 +1,5 @@
+import { vms } from "../../data/content";
 import { useReveal } from "../../hooks/useReveal";
-
-const vms = [
-	{
-		label: "Our Vision",
-		title: "Inspire the African Renaissance",
-		body: "A continent reclaiming its intellectual heritage and positioning its wisdom at the heart of global discourse — driving its own narrative, on its own terms.",
-	},
-	{
-		label: "Our Mission",
-		title: "Bridging Local Knowledge & Global Policy",
-		body: "To bridge the gap between local knowledge and global research and policy-making; facilitating dialogue towards the creation of African narratives through extensive knowledge production and dissemination.",
-	},
-	{
-		label: "Our Presence",
-		title: "Zimbabwe & Kenya",
-		body: "Head office in Harare, Zimbabwe, with an active operations base in Nairobi, Kenya — a platform for regional and continental engagement.",
-	},
-];
 
 export default function About() {
 	const leftRef = useReveal();
@@ -56,7 +39,7 @@ export default function About() {
 				</div>
 
 				{/* Challenge quote */}
-				<div className="bg-green-deep border-l-4 border-gold px-6 py-5 rounded-r-sm">
+				<div className="bg-crimson-deep border-l-4 border-gold px-6 py-5 rounded-r-sm">
 					<p className="font-display text-lg italic text-white/80 leading-relaxed">
 						"Discussions, policy formulations, and conferences about
 						Africa tend to be held without Africa. Those who possess
@@ -72,11 +55,11 @@ export default function About() {
 					<div
 						key={label}
 						className="card relative overflow-hidden p-6">
-						<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-green-mid" />
+						<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-crimson-mid" />
 						<p className="text-gold text-[0.75rem] tracking-[0.2em] uppercase mb-1.5">
 							{label}
 						</p>
-						<h3 className="font-display text-xl text-green-deep mb-2">
+						<h3 className="font-display text-xl text-crimson-deep mb-2">
 							{title}
 						</h3>
 						<p className="text-ink-light text-sm leading-relaxed">

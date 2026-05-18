@@ -73,7 +73,7 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-green-deep grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
+			className="py-24 px-8 md:px-16 lg:px-20 bg-crimson-deep grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
 			{/* Info */}
 			<div ref={leftRef} className="reveal">
 				<span
@@ -147,7 +147,7 @@ export default function Contact() {
 				<form onSubmit={handleSubmit} className="flex flex-col gap-4">
 					<div className="grid grid-cols-2 gap-4">
 						<div>
-							<label className="block text-white/50 text-[0.65rem] tracking-widest uppercase mb-1.5">
+							<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
 								First Name
 							</label>
 							<input
@@ -160,7 +160,7 @@ export default function Contact() {
 							/>
 						</div>
 						<div>
-							<label className="block text-white/50 text-[0.65rem] tracking-widest uppercase mb-1.5">
+							<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
 								Last Name
 							</label>
 							<input
@@ -175,7 +175,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.65rem] tracking-widest uppercase mb-1.5">
+						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
 							Email Address
 						</label>
 						<input
@@ -190,7 +190,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.65rem] tracking-widest uppercase mb-1.5">
+						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
 							Organisation
 						</label>
 						<input
@@ -203,7 +203,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.65rem] tracking-widest uppercase mb-1.5">
+						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
 							Nature of Enquiry
 						</label>
 						<select
@@ -222,7 +222,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.65rem] tracking-widest uppercase mb-1.5">
+						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
 							Message
 						</label>
 						<textarea
@@ -240,7 +240,7 @@ export default function Contact() {
 						type="submit"
 						disabled={status === "sending"}
 						className={`btn-primary w-full text-center mt-2 transition-all
-              ${status === "success" ? "!bg-green-mid !text-white" : ""}
+              ${status === "success" ? "!bg-crimson-mid !text-white" : ""}
               ${status === "error" ? "!bg-rust !text-white" : ""}
               ${status === "sending" ? "opacity-60 cursor-not-allowed" : ""}`}>
 						{status === "sending"

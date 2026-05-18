@@ -8,7 +8,7 @@ export default function Values() {
 	return (
 		<section
 			id="values"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-green-deep relative overflow-hidden">
+			className="py-24 px-8 md:px-16 lg:px-20 bg-crimson-deep relative overflow-hidden">
 			{/* Kente top */}
 			<div className="absolute top-0 left-0 right-0 h-1.5 kente-bar" />
 
@@ -47,7 +47,7 @@ export default function Values() {
 						<h4 className="font-display text-lg text-white mb-2">
 							{title}
 						</h4>
-						<p className="text-sm text-white/50 leading-relaxed">
+						<p className="text-sm text-white/55 leading-relaxed">
 							{desc}
 						</p>
 					</div>

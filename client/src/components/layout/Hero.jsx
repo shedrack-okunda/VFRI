@@ -40,7 +40,7 @@ export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="min-h-screen bg-green-deep grid md:grid-cols-2 pt-20 relative overflow-hidden">
+			className="min-h-screen bg-crimson-deep grid md:grid-cols-2 pt-20 relative overflow-hidden">
 			{/* VIDEO BACKGROUND */}
 			<div className="absolute inset-0 z-0 overflow-hidden">
 				{/* VIDEO A */}
@@ -125,7 +125,7 @@ export default function Hero() {
 						<div
 							key={title}
 							className="bg-white/5 border border-gold/20 rounded-sm p-6 transition-all duration-200 hover:bg-gold/7 hover:border-gold/40">
-							<Icon className="text-2xl mb-3 text-gold-light" />{" "}
+							<Icon className="text-2xl mb-3 text-crimson-deep" />{" "}
 							<h4 className="font-display text-lg text-white mb-1.5">
 								{title}
 							</h4>

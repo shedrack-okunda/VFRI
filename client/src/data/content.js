@@ -45,6 +45,24 @@ export const videos = [
 	"/videos/hero-2.mp4",
 ];
 
+export const vms = [
+	{
+		label: "Our Vision",
+		title: "Inspire the African Renaissance",
+		body: "A continent reclaiming its intellectual heritage and positioning its wisdom at the heart of global discourse — driving its own narrative, on its own terms.",
+	},
+	{
+		label: "Our Mission",
+		title: "Bridging Local Knowledge & Global Policy",
+		body: "To bridge the gap between local knowledge and global research and policy-making; facilitating dialogue towards the creation of African narratives through extensive knowledge production and dissemination.",
+	},
+	{
+		label: "Our Presence",
+		title: "Zimbabwe & Kenya",
+		body: "Head office in Harare, Zimbabwe, with an active operations base in Nairobi, Kenya — a platform for regional and continental engagement.",
+	},
+];
+
 export const VALUES = [
 	{
 		icon: ShieldCheck,

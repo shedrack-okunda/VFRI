@@ -40,13 +40,13 @@ export default function Programs() {
 								/>
 							</div>
 
-							<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-green-mid" />
+							<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-crimson-mid" />
 
 							<p className="text-gold text-[0.75rem] uppercase tracking-[0.2em] mb-2">
 								{category}
 							</p>
 
-							<h3 className="font-display text-xl text-green-deep mb-3">
+							<h3 className="font-display text-xl text-crimson-deep mb-3">
 								{title}
 							</h3>
 
@@ -54,7 +54,7 @@ export default function Programs() {
 								{description}
 							</p>
 
-							<span className="text-[0.6rem] text-white bg-green-deep px-2 py-1 rounded-sm">
+							<span className="text-[0.6rem] text-white bg-crimson-deep px-2 py-1 rounded-sm">
 								{status}
 							</span>
 						</div>

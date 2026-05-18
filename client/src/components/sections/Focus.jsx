@@ -28,7 +28,7 @@ export default function Focus() {
 				{FOCUS_AREAS.map(({ num, title, desc, image }, i) => (
 					<div
 						key={num}
-						className={`card p-6 ${i === 0 ? "sm:col-span-2 bg-green-deep" : "bg-white"}`}>
+						className={`card p-6 ${i === 0 ? "sm:col-span-2 bg-crimson-deep" : "bg-crimson-deep"}`}>
 						{/* IMAGE */}
 						<div className="h-52 overflow-hidden">
 							<img
@@ -47,14 +47,14 @@ export default function Focus() {
 
 							<h3
 								className={`font-display text-xl mb-2 ${
-									i === 0 ? "text-white" : "text-green-deep"
+									i === 0 ? "text-white" : "text-white"
 								}`}>
 								{title}
 							</h3>
 
 							<p
 								className={`text-sm leading-relaxed ${
-									i === 0 ? "text-white/55" : "text-ink-light"
+									i === 0 ? "text-white/60" : "text-white/60"
 								}`}>
 								{desc}
 							</p>

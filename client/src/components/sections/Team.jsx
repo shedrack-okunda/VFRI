@@ -8,7 +8,7 @@ export default function Team() {
 	return (
 		<section
 			id="team"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-green-deep relative">
+			className="py-24 px-8 md:px-16 lg:px-20 bg-crimson-deep relative">
 			{/* Kente bottom */}
 			<div className="absolute bottom-0 left-0 right-0 h-1.5 kente-bar" />
 

@@ -41,9 +41,9 @@ export default function Achievements() {
 							/>
 						</div>
 						{/* Left accent bar */}
-						<div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold to-green-mid" />
+						<div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
 						<div>
-							<h3 className="font-display text-xl text-green-deep mb-3">
+							<h3 className="font-display text-xl text-crimson-deep mb-3">
 								{title}
 							</h3>
 							<p className="text-ink-light text-sm leading-relaxed">

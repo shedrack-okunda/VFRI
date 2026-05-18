@@ -19,25 +19,25 @@ export default function Navbar() {
 	return (
 		<nav
 			className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300
-      ${scrolled ? "py-2 px-8 md:px-12" : "py-4 px-8 md:px-12"}
-      bg-green backdrop-blur-md border-b border-gold/20`}>
+      ${scrolled ? "py-1 px-7 md:px-11" : "py-3 px-7 md:px-11"}
+      bg-crimson backdrop-blur-md border-b border-gold/20`}>
 			{/* Logo */}
 			<a
 				href="#home"
 				onClick={() => handleNav("#home")}
 				className="flex items-center gap-3 no-underline">
-				<div className="w-10 h-10 relative flex-shrink-0">
+				<div className="w-11 h-11 relative flex-shrink-0">
 					<img
-						src="/logov4.png"
+						src="/logo2.png"
 						alt="Logo"
 						className="w-full h-full"
 					/>
 				</div>
-				<div className="leading-tight">
-					<strong className="block font-display font-bold text-sm text-gold-light tracking-wide">
+				<div className="leading-tight font-sans">
+					<strong className="block font-display font-bold text-md text-crimson-dark  tracking-wide">
 						Victoria Falls Regional Institute
 					</strong>
-					<span className="text-[0.5rem] text-gold tracking-[0.12em] uppercase">
+					<span className="text-[0.6rem] text-crimson-mid tracking-[0.12em] uppercase">
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>
@@ -49,7 +49,7 @@ export default function Navbar() {
 					<li key={href}>
 						<button
 							onClick={() => handleNav(href)}
-							className="text-gold text-sm tracking-widest uppercase hover:text-gold-light transition-colors duration-200 bg-transparent border-0 cursor-pointer font-sans">
+							className="text-crimson-mid text-sm font-bold tracking-widest uppercase hover:text-crimson-light transition-colors duration-200 bg-transparent border-0 cursor-pointer font-sans">
 							{label}
 						</button>
 					</li>
@@ -69,19 +69,19 @@ export default function Navbar() {
 				onClick={() => setMenuOpen(!menuOpen)}
 				aria-label="Toggle menu">
 				<span
-					className={`block w-6 h-0.5 bg-gold-light transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+					className={`block w-6 h-0.5 bg-crimson-mid transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
 				/>
 				<span
-					className={`block w-6 h-0.5 bg-gold-light transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
+					className={`block w-6 h-0.5 bg-crimson-mid transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
 				/>
 				<span
-					className={`block w-6 h-0.5 bg-gold-light transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+					className={`block w-6 h-0.5 bg-crimson-mid transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
 				/>
 			</button>
 
 			{/* Mobile Menu */}
 			{menuOpen && (
-				<div className="absolute top-full left-0 right-0 bg-green-deep border-t border-gold/20 flex flex-col gap-0 md:hidden">
+				<div className="absolute top-full left-0 right-0 bg-crimson-mid border-t border-gold/20 flex flex-col gap-0 md:hidden">
 					{NAV_LINKS.map(({ label, href }) => (
 						<button
 							key={href}

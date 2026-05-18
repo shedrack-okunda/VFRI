@@ -43,7 +43,7 @@ export default function News() {
 							</span>
 						</div>
 
-						<h3 className="font-display text-lg text-green-deep mb-3 group-hover:text-gold transition-colors">
+						<h3 className="font-display text-lg text-crimson-deep mb-3 group-hover:text-crimson-dark transition-colors">
 							{title}
 						</h3>
 
