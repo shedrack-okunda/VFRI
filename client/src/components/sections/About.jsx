@@ -1,4 +1,4 @@
-import { useReveal } from "../hooks/useReveal";
+import { useReveal } from "../../hooks/useReveal";
 
 const vms = [
 	{
@@ -73,13 +73,13 @@ export default function About() {
 						key={label}
 						className="card relative overflow-hidden p-6">
 						<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-green-mid" />
-						<p className="text-gold text-[0.65rem] tracking-[0.2em] uppercase mb-1.5">
+						<p className="text-gold text-[0.75rem] tracking-[0.2em] uppercase mb-1.5">
 							{label}
 						</p>
 						<h3 className="font-display text-xl text-green-deep mb-2">
 							{title}
 						</h3>
-						<p className="text-ink-light text-xs leading-relaxed">
+						<p className="text-ink-light text-sm leading-relaxed">
 							{body}
 						</p>
 					</div>

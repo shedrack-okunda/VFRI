@@ -1,5 +1,5 @@
-import { useReveal } from "../hooks/useReveal";
-import { FOCUS_AREAS } from "../data/content";
+import { useReveal } from "../../hooks/useReveal";
+import { FOCUS_AREAS } from "../../data/content";
 
 export default function Focus() {
 	const leftRef = useReveal();
@@ -16,7 +16,7 @@ export default function Focus() {
 				<h2 className="section-title text-4xl md:text-5xl mb-6">
 					Focus Areas
 				</h2>
-				<p className="text-ink-light text-sm leading-[1.85]">
+				<p className="text-ink-light text-md leading-[1.85]">
 					VFRI's work is organised around five primary domains, each
 					grounded in African realities and aimed at global relevance.
 				</p>
@@ -53,7 +53,7 @@ export default function Focus() {
 							</h3>
 
 							<p
-								className={`text-xs leading-relaxed ${
+								className={`text-sm leading-relaxed ${
 									i === 0 ? "text-white/55" : "text-ink-light"
 								}`}>
 								{desc}

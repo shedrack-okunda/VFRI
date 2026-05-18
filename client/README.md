@@ -18,7 +18,6 @@ vfri/
 │   │   ├── main.jsx
 │   │   └── index.css        # Tailwind directives + custom classes
 │   ├── tailwind.config.js   # VFRI brand colors & fonts
-│   └── vite.config.js       # Dev proxy → backend
 
 ```
 

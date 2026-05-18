@@ -1,5 +1,5 @@
-import { useReveal } from "../hooks/useReveal";
-import { NEWS } from "../data/content";
+import { useReveal } from "../../hooks/useReveal";
+import { NEWS } from "../../data/content";
 
 export default function News() {
 	const headRef = useReveal();
@@ -17,17 +17,25 @@ export default function News() {
 					</h2>
 				</div>
 
-				<p className="text-ink-light text-sm leading-[1.85] self-end">
+				<p className="text-ink-light text-md leading-[1.85] self-end">
 					Latest institutional updates, research outputs, and public
 					engagement activities.
 				</p>
 			</div>
 
 			<div ref={gridRef} className="reveal grid md:grid-cols-3 gap-5">
-				{NEWS.map(({ title, date, summary, tag }) => (
+				{NEWS.map(({ title, date, summary, tag, image }) => (
 					<div key={title} className="card p-6 group">
+						{/* IMAGE */}
+						<div className="h-40 w-full mb-4 overflow-hidden rounded-sm">
+							<img
+								src={image}
+								alt={title}
+								className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+							/>
+						</div>
 						<div className="flex justify-between items-center mb-3">
-							<span className="text-[0.6rem] text-gold uppercase tracking-[0.2em]">
+							<span className="text-[0.7rem] text-gold uppercase tracking-[0.2em]">
 								{tag}
 							</span>
 							<span className="text-[0.6rem] text-ink-light">
@@ -39,7 +47,7 @@ export default function News() {
 							{title}
 						</h3>
 
-						<p className="text-xs text-ink-light leading-relaxed">
+						<p className="text-sm text-ink-light leading-relaxed">
 							{summary}
 						</p>
 					</div>

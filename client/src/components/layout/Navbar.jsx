@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NAV_LINKS } from "../data/content";
+import { NAV_LINKS } from "../../data/content";
 
 export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
@@ -34,10 +34,10 @@ export default function Navbar() {
 					/>
 				</div>
 				<div className="leading-tight">
-					<strong className="block font-display font-bold text-xl text-gold-light tracking-wide">
+					<strong className="block font-display font-bold text-sm text-gold-light tracking-wide">
 						Victoria Falls Regional Institute
 					</strong>
-					<span className="text-[0.7rem] text-gold tracking-[0.12em] uppercase">
+					<span className="text-[0.5rem] text-gold tracking-[0.12em] uppercase">
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>
@@ -81,7 +81,7 @@ export default function Navbar() {
 
 			{/* Mobile Menu */}
 			{menuOpen && (
-				<div className="absolute top-full left-0 right-0 bg-green-deep/98 border-t border-gold/20 flex flex-col gap-0 md:hidden">
+				<div className="absolute top-full left-0 right-0 bg-green-deep border-t border-gold/20 flex flex-col gap-0 md:hidden">
 					{NAV_LINKS.map(({ label, href }) => (
 						<button
 							key={href}

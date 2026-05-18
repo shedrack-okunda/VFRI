@@ -1,5 +1,5 @@
-import { useReveal } from "../hooks/useReveal";
-import { TEAM } from "../data/content";
+import { useReveal } from "../../hooks/useReveal";
+import { TEAM } from "../../data/content";
 
 export default function Team() {
 	const headRef = useReveal();
@@ -27,13 +27,15 @@ export default function Team() {
 				{TEAM.map(({ name, role, bio, image }) => (
 					<div
 						key={name}
-						className="flex gap-6 bg-white/5 border border-gold/15 rounded-sm p-6 transition-all duration-200 hover:bg-white/8">
+						className="flex flex-col md:flex-row gap-6 bg-white/5 border border-gold/15 rounded-sm p-6 transition-all duration-200 hover:bg-white/8">
+						{" "}
 						{/* Photo placeholder */}
-						<div className=" w-32 h-32 flex-shrink-0 border border-gold/30 rounded-sm bg-gold/8 flex items-center justify-center">
+						<div className="w-full md:w-40 h-40 md:h-auto flex-shrink-0 border border-gold/30 rounded-sm bg-gold/8 overflow-hidden">
+							{" "}
 							<img
 								src={image}
 								loading="lazy"
-								className="w-full h-full"
+								className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
 							/>
 						</div>
 						<div>
@@ -43,7 +45,7 @@ export default function Team() {
 							<h3 className="font-display text-2xl text-white mb-3">
 								{name}
 							</h3>
-							<p className="text-white/55 text-xs leading-relaxed">
+							<p className="text-white/55 text-sm leading-relaxed">
 								{bio}
 							</p>
 						</div>

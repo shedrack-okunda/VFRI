@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { cards, videos } from "../data/content";
+import { cards, videos } from "../../data/content";
 
 export default function Hero() {
 	const leftRef = useRef(null);
@@ -86,7 +86,7 @@ export default function Hero() {
 					Pan-African Research Institute
 				</span>
 
-				<h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.02] mb-4">
+				<h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.02] mb-4">
 					Victoria Falls
 					<br />
 					<em className="text-gold-light not-italic font-light">
@@ -94,11 +94,11 @@ export default function Hero() {
 					</em>
 				</h1>
 
-				<p className="font-display text-xl italic text-white/50 mb-6 tracking-wide">
+				<p className="font-display text-xl italic text-white/80 mb-6 tracking-wide">
 					Reimagining Africa Through Dialogue
 				</p>
 
-				<p className="text-sm leading-relaxed text-white/65 max-width-sm max-w-[420px] mb-10">
+				<p className="text-md leading-relaxed text-white/65 max-width-sm max-w-[420px] mb-10">
 					A pan-African independent academic and research institute
 					with operational bases in Zimbabwe and Kenya — localising
 					the power of knowledge to shape global research and policy
@@ -121,15 +121,15 @@ export default function Hero() {
 			{/* Right — cards */}
 			<div className="hidden md:flex items-center justify-center px-8 py-16 relative z-10">
 				<div className="grid gap-4 w-full max-w-[420px]">
-					{cards.map(({ icon, title, desc }) => (
+					{cards.map(({ icon: Icon, title, desc }) => (
 						<div
 							key={title}
 							className="bg-white/5 border border-gold/20 rounded-sm p-6 transition-all duration-200 hover:bg-gold/7 hover:border-gold/40">
-							<span className="text-2xl mb-3 block">{icon}</span>
+							<Icon className="text-2xl mb-3 text-gold-light" />{" "}
 							<h4 className="font-display text-lg text-white mb-1.5">
 								{title}
 							</h4>
-							<p className="text-xs text-white/50 leading-relaxed">
+							<p className="text-sm text-white/60 leading-relaxed">
 								{desc}
 							</p>
 						</div>
