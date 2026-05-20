@@ -1,5 +1,5 @@
-import { useReveal } from "../../hooks/useReveal";
-import { TEAM } from "../../data/content";
+import { useReveal } from "../hooks/useReveal";
+import { TEAM } from "../data/content";
 
 export default function Team() {
 	const headRef = useReveal();

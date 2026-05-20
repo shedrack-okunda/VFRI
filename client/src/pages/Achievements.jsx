@@ -1,5 +1,5 @@
-import { useReveal } from "../../hooks/useReveal";
-import { ACHIEVEMENTS } from "../../data/content";
+import { useReveal } from "../hooks/useReveal";
+import { ACHIEVEMENTS } from "../data/content";
 
 export default function Achievements() {
 	const headRef = useReveal();

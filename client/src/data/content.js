@@ -12,13 +12,17 @@ import {
 } from "lucide-react";
 
 export const NAV_LINKS = [
-	{ label: "About", href: "#about" },
-	{ label: "Focus Areas", href: "#focus" },
-	{ label: "Services", href: "#services" },
-	{ label: "Programs", href: "#programs" },
-	{ label: "News", href: "#news" },
-	{ label: "Team", href: "#team" },
-	{ label: "Achievements", href: "#achievements" },
+	{ label: "Focus Areas", href: "#focus", type: "scroll" },
+	{ label: "Services", href: "#services", type: "scroll" },
+	{ label: "Contact", href: "#contact", type: "scroll" },
+];
+
+export const ABOUT_DROPDOWN = [
+	{ label: "Our Stroy", href: "#about", type: "scroll" },
+	{ label: "Programs", href: "/programs", type: "route" },
+	{ label: "News", href: "/news", type: "route" },
+	{ label: "Team", href: "/team", type: "route" },
+	{ label: "Achievements", href: "/achievements", type: "route" },
 ];
 
 export const ENQUIRY_TYPES = [

@@ -1,5 +1,5 @@
-import { useReveal } from "../../hooks/useReveal";
-import { PROGRAMS } from "../../data/content";
+import { useReveal } from "../hooks/useReveal";
+import { PROGRAMS } from "../data/content";
 
 export default function Programs() {
 	const headRef = useReveal();
