@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../lib/supabase";
+import { supabase } from "../../lib/supabase";
 
 export default function ProgramsManager() {
 	const [programs, setPrograms] = useState([]);
@@ -166,7 +166,7 @@ export default function ProgramsManager() {
 								key={program.id}
 								className="card p-6 bg-white relative overflow-hidden">
 								{/* Accent */}
-								<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-green-mid" />
+								<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-crimson-mid" />
 
 								<div className="flex items-start justify-between gap-5 mb-4">
 									<div>
@@ -175,7 +175,7 @@ export default function ProgramsManager() {
 												{program.category}
 											</span>
 
-											<span className="text-[0.65rem] uppercase tracking-widest px-2 py-1 rounded-full bg-green-deep/5 text-green-deep">
+											<span className="text-[0.65rem] uppercase tracking-widest px-2 py-1 rounded-full bg-crimson-deep/5 text-crimson-deep">
 												{program.status}
 											</span>
 										</div>

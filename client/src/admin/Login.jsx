@@ -42,7 +42,7 @@ export default function Login() {
 	};
 
 	return (
-		<section className="min-h-screen bg-green-deep flex items-center justify-center px-6">
+		<section className="min-h-screen bg-crimson-deep flex items-center justify-center px-6">
 			<div className="w-full max-w-md bg-white/5 border border-gold/20 rounded-sm p-8">
 				<div className="mb-8 text-center">
 					<p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
@@ -66,7 +66,7 @@ export default function Login() {
 							value={form.email}
 							onChange={handleChange}
 							required
-							className="w-full bg-white/6 border border-white/15 rounded-sm px-4 py-3
+							className="w-full bg-crimson-mid border border-white/15 rounded-sm px-4 py-3
               text-white text-sm placeholder:text-white/25
               focus:outline-none focus:border-gold"
 						/>
@@ -83,7 +83,7 @@ export default function Login() {
 							value={form.password}
 							onChange={handleChange}
 							required
-							className="w-full bg-white/6 border border-white/15 rounded-sm px-4 py-3
+							className="w-full bg-crimson-mid border border-white/15 rounded-sm px-4 py-3
               text-white text-sm placeholder:text-white/25
               focus:outline-none focus:border-gold"
 						/>
